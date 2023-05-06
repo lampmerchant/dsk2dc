@@ -105,7 +105,7 @@ class DiskImage:
                          0,                                  # (uint8) filler
                          0,                                  # (uint16) vertical position
                          0,                                  # (uint16) horizontal position
-                         0,                                  # (uing16) window/folder ID
+                         0,                                  # (uint16) window/folder ID
                          0,                                  # (uint8) protected flag
                          0,                                  # (uint8) filler
                          len(self.data) + len(dc42_header),  # (uint32) data fork length
