@@ -66,7 +66,7 @@ class DiskImage:
   
   @classmethod
   def from_file(cls, filename, name=None):
-    '''Build a DiskImage from a file, optionally with a custon name.'''
+    '''Build a DiskImage from a file, optionally with a custom name.'''
     with open(filename, 'rb') as fp:
       data_size = fp.seek(0, io.SEEK_END)
       if data_size not in DISK_TYPES: raise ValueError('input raw image size %d is not a recognized size' % data_size)
